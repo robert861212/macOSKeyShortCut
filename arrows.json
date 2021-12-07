@@ -11,10 +11,12 @@
                        {"type": "basic", "from": {"key_code": "l", "modifiers": {"mandatory": ["fn"], "optional": ["any"]}}, "to": [{"key_code": "right_arrow"}]}
                        ]
     },
-
     { "description": "Switch Left Command/CTRL",
-      "manipulators": [{"type": "basic", "from": {"key_code": "left_command"}, "to": [{"key_code": "left_control"}] },
-                        {"type": "basic", "from": {"key_code": "left_control"}, "to": [{"key_code": "left_command"}] }]
+      "manipulators": [{"type": "basic", "from": {"key_code": "left_command", "modifiers": {"optional": ["any"]}}, "to": [{"key_code": "left_control"}] },
+                        {"type": "basic", "from": {"key_code": "left_control", "modifiers": {"optional": ["any"]}}, "to": [{"key_code": "left_command"}] }]
+    },
+    { "description": "Right Command to Capslock",
+      "manipulators": [{"type": "basic", "from": {"key_code": "right_command", "modifiers": {"optional": ["any"]}}, "to": [{"key_code": "caps_lock"}] }]
     },
 
     { "description": "Fn + W/A/S/D to Arrow Keys",
