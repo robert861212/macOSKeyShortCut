@@ -12,9 +12,9 @@
                        ]
     },
 
-    { "description": "Switch Command/CTRL",
-      "manipulators": [{"type": "basic", "from": {"key_code": "cmd"}, "to": [{"key_code": "ctrl"}] },
-                        {"type": "basic", "from": {"key_code": "cmd"}, "to": [{"key_code": "ctrl"}] }]
+    { "description": "Switch Left Command/CTRL",
+      "manipulators": [{"type": "basic", "from": {"key_code": "left_command"}, "to": [{"key_code": "left_control"}] },
+                        {"type": "basic", "from": {"key_code": "left_control"}, "to": [{"key_code": "left_command"}] }]
     },
 
     { "description": "Fn + W/A/S/D to Arrow Keys",
